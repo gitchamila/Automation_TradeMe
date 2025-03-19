@@ -5,7 +5,7 @@ const config ={
 
   testDir: './tests',
 
-  timeout: 30*100,
+  timeout: 50*1000,
   expect:{
 
     timeout:5000
@@ -17,9 +17,11 @@ const config ={
     browserName: 'chromium',
     headless: false,
     screenshot:'on',
-    trace:'on'
+    //trace:'on'
+    video:'on'
   }
 
 
 };
 
+module.exports = config;

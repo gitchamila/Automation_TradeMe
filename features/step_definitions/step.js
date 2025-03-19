@@ -8,15 +8,19 @@ Given('Loing to TreadMe Ecommerce application with {un} and {pw}', async functio
     const context = await browser.newContext();
     const page = await context.newpage(page);
 
+    page.goto("https://rahulshettyacademy.com/client/");
+
+
+
 
 });
 
-When('Enter valied credintilas', function () {
-    // Write code here that turns the phrase above into concrete actions
-    return 'pending';
-});
+// When('Enter valied credintilas', function () {
+//     // Write code here that turns the phrase above into concrete actions
+//     return 'pending';
+// });
 
-Then('Verify user can loging to the application', function () {
-    // Write code here that turns the phrase above into concrete actions
-    return 'pending';
-});
+// Then('Verify user can loging to the application', function () {
+//     // Write code here that turns the phrase above into concrete actions
+//     return 'pending';
+// });
