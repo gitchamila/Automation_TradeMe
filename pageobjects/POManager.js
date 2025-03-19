@@ -1,6 +1,7 @@
 const { LoginPage } = require('./LoginPage');
-const { JobsPage } = require('./JobsPage')
-const { DashboardPage } = require('./DashboardPage')
+const { JobsPage } = require('./JobsPage');
+const { DashboardPage } = require('./DashboardPage');
+const {MarketplacePage} = require('./MarketplacePage');
 
 class POManager {
 
@@ -9,6 +10,8 @@ class POManager {
         this.loginPage = new LoginPage(this.page);
         this.jobsPage = new JobsPage(this.page);
         this.dashboardPage = new DashboardPage(this.page);
+        this.marketplacePage = new MarketplacePage(this.page);
+
     }
 
 
@@ -22,6 +25,9 @@ class POManager {
 
     getDashboardPage() {
         return this.dashboardPage;
+    }
+    getMarketplacePage() {
+        return this.marketplacePage;
     }
 
 }
